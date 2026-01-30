@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Supply Chain Optimization</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+
+    <h2>Supply Chain Dashboard</h2>
+
+    <form method="post">
+        <label>Enter Predicted Demand</label><br>
+        <input type="number" name="demand" required><br><br>
+
+        <label>Enter Available Stock</label><br>
+        <input type="number" name="stock" required><br><br>
+
+        <button type="submit">Check Stock Status</button>
+    </form>
+
+    <br>
+
+    {% if status %}
+        <p><b>Predicted Demand:</b> {{ demand }}</p>
+        <p><b>Available Stock:</b> {{ stock }}</p>
+        <h3>Status: {{ status }}</h3>
+    {% endif %}
+
+</body>
+</html>
