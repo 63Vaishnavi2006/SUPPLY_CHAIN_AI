@@ -51,7 +51,9 @@ python app.py
 supply_chain_flask/
 │
 ├── app.py
-├── data.csv          
+
+├── data.csv
+
 └── templates/
     └── index.html
 
@@ -89,3 +91,4 @@ Integrating graphical dashboards
 Using advanced machine learning models
 Cloud-based deployment
 Real-time data integration
+
